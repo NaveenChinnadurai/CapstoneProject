@@ -1,0 +1,14 @@
+.navbar{
+    border-bottom: 2px solid beige;
+}
+.navbar>img{
+    height: 60px;
+}
+.navbar>ul{
+    width: 50%;
+    height: fit-content;
+}
+.nav-links>li:hover{
+    color: #3F5950;
+    font-weight: 600;
+}

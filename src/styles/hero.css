@@ -1,0 +1,30 @@
+.hero-div{
+    background-color: #3F5950;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+.hero-txt{
+    width: 50%;
+}
+.hero-txt>h1{
+    color: #A98D06;
+}
+.hero-txt>h1,.hero-txt>h2{
+    margin: 5px 0px;
+}
+.hero-txt>h2,.hero-txt>p{
+    color: #FFFFFF;
+}
+.hero-txt>p{
+    width: 90%;
+}
+.hero-btn-div{
+    margin: 30px 0px;
+}
+.hero-img{
+    background:url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+    width: 250px;
+}

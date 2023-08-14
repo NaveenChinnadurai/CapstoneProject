@@ -1,0 +1,17 @@
+
+.special-card{
+    width: 28%;
+    margin-right:30px ;
+    padding: 10px 10px;
+    background-color: #EDEFEE;
+    border-radius: 10px;
+}
+.special-head{
+    margin: 5px 0px;
+}
+.special-card>p{
+    margin: 10px 0px;
+}
+.card-img{
+    width: 100%;
+}

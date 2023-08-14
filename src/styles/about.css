@@ -1,0 +1,31 @@
+.about-div{
+    padding: 20px 30px;
+}
+.about-txt{
+    width: 40%;
+}
+.about-txt>h1{
+    margin: 5px 0px;
+}
+.about-txt>p{
+    text-align: justify;
+    margin: 10px 0px;
+}
+.about-img{
+    width: 200px;
+    height: 300px;
+    margin-bottom: 2px;
+}
+.ab-1{
+    margin-top: 80px;
+    background:url('../assets/chief-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.ab-2{
+    margin-top: -50px ;
+    margin-left: -50px;
+    background:url('../assets/chief-2.png');
+    background-position: center;
+    background-size: cover;
+}

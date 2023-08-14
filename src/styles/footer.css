@@ -1,0 +1,15 @@
+.footer-div{
+    padding: 5rem 13rem;
+    background-color: #748E86;
+}
+.footer-div>img{
+    height: 200px;
+}
+.footer-div-1{
+    padding: 0px 10px;
+    height: 200px;
+    width: 170px;
+}
+.footer-list-1>li{
+    margin: 10px;
+}
