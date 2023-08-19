@@ -1,5 +1,6 @@
 import React from 'react'
-import '../styles/hero.css'
+import { Link } from 'react-router-dom'
+import '../../styles/homePage/hero.css'
 function Hero() {
   return (
     <div className='hero-div row-sb pad-20-rem'>
@@ -8,7 +9,7 @@ function Hero() {
         <h2>Chicago</h2>
         <p>We are a family owned <br /> Mediterranean restaurant, focused <br /> on traditional recipes served with a <br /> modern twist.</p>
         <div className="hero-btn-div">
-          <span role='button' className='btn br-20'>Reserve a Table</span>
+          <Link role='button' to="/bookingpage" className='btn br-20' >Reserve a Table</Link>
         </div>
       </div>
       <div className="hero-img br-20"></div>

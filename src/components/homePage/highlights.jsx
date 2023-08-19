@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/heighlights.css'
-import { specialItems } from '../scripts/specials'
+import '../../styles/homePage/heighlights.css'
+import { specialItems } from '../../scripts/specials'
 function Highlights() {
   const displaySpecials=specialItems.map((item)=>{
     return(
-      <div className="special-card">
+      <div className="special-card" key={item.foodName}>
         <img src={item.img} alt="Imgage" className='card-img'/>
         <div className="special-head row-sb">
           <h4>{item.foodName}</h4>

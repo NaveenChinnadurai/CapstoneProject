@@ -1,0 +1,65 @@
+.booking-div{
+    height: 50vh;
+    justify-content: start;
+}
+form{
+    background-color: #3F5950;
+    padding: 2% 0;
+    border-radius: 20px;
+}
+.user-info{
+    width: 53%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.book-sub{
+    margin: 5px;
+}
+.guest-count{
+    width: 40%;
+}
+input{
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: #3F5950;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+}
+input:focus{
+    border: none;
+}
+input[type='email']:focus{
+    background-color: #3F5950;
+}
+input::placeholder{
+    color: white;
+}
+
+select{
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+    background-color: #3F5950;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+}
+.date-field{
+    font-size: 13px;
+    padding: 3px;
+    margin: 3px;
+}
+.book-btn{
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+@media screen and (max-width:576px) {
+    form{
+        padding: 5% 0;
+    }
+    .book-details{
+        flex-direction: column;
+    }
+}

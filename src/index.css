@@ -34,7 +34,7 @@ li{
     align-content: space-between;
 }
 .pad-10-rem{
-    padding: 0px 10rem;
+    padding: 0px 10vw;
 }
 .pad-20-rem{
     padding: 1rem 20rem;
@@ -43,7 +43,11 @@ li{
     background-color: #F4CE14;
     padding: 10px 20px;
     font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
+
 .br-20{
     border-radius: 10px;
 }
@@ -53,4 +57,10 @@ li{
 }
 p{
     font-size: 16px;
+}
+html::-webkit-scrollbar{
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #045035;
 }
