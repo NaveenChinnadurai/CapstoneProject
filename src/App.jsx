@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       <Routes>
+        <Route path='/' element={<HomePage/>}/>
         <Route path='/bookingpage' element={<BookingPage />} />
-        <Route path='/' element={<HomePage/>}/>1
       </Routes>
       <Footer />
     </div>

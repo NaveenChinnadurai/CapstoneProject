@@ -1,10 +1,10 @@
 .hero-div{
     background-color: #3F5950;
-    height: 40vh;
-    padding: 20px 20%;
+    padding: 20px 22%;
 }
 .hero-txt{
     width: 50%;
+    align-items: flex-start !important;
 }
 .hero-txt>h1{
     color: #A98D06;
@@ -57,11 +57,9 @@
     }
     .hero-img{
         margin: 0 auto;
-        height: 200px;
-        width: 150px;
+        width: 70%;
     }
     .hero-btn{
-        background-color: red;
         font-size: 12px ;
         padding: 5px 15px !important;
     }

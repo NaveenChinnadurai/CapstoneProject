@@ -5,7 +5,7 @@ function Hero() {
   
   return (
     <div className='row-sb hero-div '>
-      <div className="hero-txt">
+      <div className="col hero-txt">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>We are a family owned <br /> Mediterranean restaurant, focused <br /> on traditional recipes served with a <br /> modern twist.</p>
