@@ -1,0 +1,63 @@
+
+form{
+    padding: 20px 0;
+    border-radius: 20px;
+    width: 40% !important;
+}
+.user-info{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.book-details{
+}
+.book-sub{
+    margin: 5px;
+    width: fit-content !important;
+}
+.guest-count{
+    width: 40%;
+}
+input{
+    padding: 5px;
+    margin: 10px 5px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+input::placeholder{
+    color: black;
+}
+select{
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+    border: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.date-field{
+    font-size: 13px;
+    padding: 3px;
+    margin: 3px;
+}
+.book-btn{
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+@media screen and (max-width:576px) {
+    .booking-div{
+        width: 100% !important;
+    }
+    .booking-div>h1{
+        font-size: 25px;
+    }
+    .book-details{
+        flex-direction: column;
+    }
+}

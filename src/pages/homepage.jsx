@@ -9,8 +9,8 @@ function HomePage() {
         <div className='Home-page-div'>
             <Hero />
             <Highlights />
-            <About />
             <Testimonials />
+            <About />
         </div>
     )
 }

@@ -1,65 +1,37 @@
-.booking-div{
-    height: 50vh;
-    justify-content: start;
+.booking-page-div{
+    padding: 30px;
+    justify-content: center !important;
 }
-form{
-    background-color: #3F5950;
-    padding: 2% 0;
-    border-radius: 20px;
+.booking-page-div>p{
+    width: 80%;
+    font-size: 20px;
 }
-.user-info{
-    width: 53%;
-    flex-wrap: wrap;
-    padding: 10px;
+.book-form{
+    margin: 20px;
+    width: 100%;
+    flex-direction: column;
 }
-.book-sub{
-    margin: 5px;
-}
-.guest-count{
-    width: 40%;
-}
-input{
-    padding: 5px;
-    margin: 5px 0px;
-    background-color: #3F5950;
-    border: none;
-    color: white;
-    border-bottom: 2px solid black;
-}
-input:focus{
-    border: none;
-}
-input[type='email']:focus{
-    background-color: #3F5950;
-}
-input::placeholder{
-    color: white;
-}
-
-select{
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin: 0px 5px;
-    background-color: #3F5950;
-    border: none;
-    color: white;
-    border-bottom: 2px solid black;
-}
-.date-field{
-    font-size: 13px;
-    padding: 3px;
-    margin: 3px;
-}
-.book-btn{
-    border-radius: 10px;
-    margin-top:20px;
+.booking-img{
+    height: 350px;
+    width: 350px;
+    background-image: url('../../assets/reserve.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:576px) {
-    form{
-        padding: 5% 0;
+    .booking-page-div{
+        padding: 10px;
     }
-    .book-details{
-        flex-direction: column;
+    .booking-page-div>p{
+        width: 100%;
+        text-align: justify;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .booking-img{
+        height: 200px;
+        width: 200px;
     }
 }
