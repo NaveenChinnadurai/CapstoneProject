@@ -1,5 +1,5 @@
 import img1 from '../assets/salad.png'
-import img2 from '../assets/ledous.png'
+import img2 from '../assets/Ledous.png'
 import img3 from '../assets/bruchetta.png'
 export const specialItems = [
     {
