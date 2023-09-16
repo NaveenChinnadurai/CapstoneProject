@@ -44,9 +44,11 @@
         background-color: #2e4d42;
         padding-top: 30px;
     }
-    .display-nav>li{
+    .display-nav>li,.display-nav>li>.nav-book{
         width: fit-content;
         margin: 10px 0;
+        font-weight: 500;
+        color: white;
     }
     .display-nav>li:hover{
         color: white;

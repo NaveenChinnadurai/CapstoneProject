@@ -1,6 +1,6 @@
-import img1 from '../assets/salad.png'
-import img2 from '../assets/Ledous.png'
-import img3 from '../assets/bruchetta.png'
+import img1 from '../assets/foodImg/salad.png'
+import img2 from '../assets/foodImg/Ledous.png'
+import img3 from '../assets/foodImg/bruchetta.png'
 export const specialItems = [
     {
         img: img1,

@@ -24,7 +24,7 @@
     font-weight: 600;
 }
 .hero-img{
-    background:url('../../assets/banner.png');
+    background:url('../../assets/homeImg/banner.png');
     background-position: center;
     background-size: cover;
     height: 280px;

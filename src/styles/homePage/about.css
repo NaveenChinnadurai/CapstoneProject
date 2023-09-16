@@ -18,14 +18,14 @@
 }
 .ab-1{
     margin-top: 80px;
-    background:url('../../assets/chief-1.jpg');
+    background:url('../../assets/homeImg/chief-1.jpg');
     background-position: center;
     background-size: cover;
 }
 .ab-2{
     margin-top: -50px ;
     margin-left: -50px;
-    background:url('../../assets/chief-2.png');
+    background:url('../../assets/homeImg/chief-2.png');
     background-position: center;
     background-size: cover;
 }

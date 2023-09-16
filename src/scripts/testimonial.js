@@ -1,7 +1,7 @@
-import andavar from '../assets/andavar.jpg'
-import munees from '../assets/munees.jpg'
-import akash from '../assets/akash.jpg'
-import manisy from '../assets/manisy.jpg'
+import andavar from '../assets/reviewerImg/andavar.jpg'
+import munees from '../assets/reviewerImg/munees.jpg'
+import akash from '../assets/reviewerImg/akash.jpg'
+import manisy from '../assets/reviewerImg/manisy.jpg'
 export const testimonial=[
     {
         img:andavar,
