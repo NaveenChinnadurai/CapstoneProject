@@ -1,8 +1,10 @@
-
+.highlights-div{
+    padding: 20px 0;
+}
 .special-card{
-    width: 28%;
-    margin-right:30px ;
-    padding: 10px 10px;
+    width: 25%;
+    padding: 10px;
+    margin: 0 20px;
     background-color: #EDEFEE;
     border-radius: 10px;
 }
@@ -14,4 +16,40 @@
 }
 .card-img{
     width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .highlight-cards{
+        flex-direction: column;
+        align-content: center;
+    }
+    .special-card{
+        width: 80%;
+        margin: 10px 0;
+    }
+    .special-head>h4{
+        font-size: 15px;
+    }
+    .special-head>span{
+        font-size: 13px;
+    }
+    .special-card>p{
+        font-size: 14px;
+    }
+    .special-card>span{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .higlight-head{
+        padding: 0 !important;
+        justify-content: space-evenly !important;
+    }
+    .higlight-head>h1{
+        font-size: 20px;
+    }
+    .highlights-btn{
+        font-weight: 600 !important;
+        font-size: 10px;
+        padding: 5px 10px !important;
+    }
 }

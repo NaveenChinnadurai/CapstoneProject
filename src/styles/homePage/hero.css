@@ -1,7 +1,7 @@
 .hero-div{
     background-color: #3F5950;
     height: 40vh;
-    margin-bottom: 50px;
+    padding: 20px 20%;
 }
 .hero-txt{
     width: 50%;
@@ -29,4 +29,40 @@
     background-size: cover;
     height: 280px;
     width: 250px;
+}
+
+@media screen and (max-width:576px){
+    .hero-div{
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        padding: 10px 0;
+        height: fit-content;
+    }
+    .hero-txt{
+        width: fit-content;
+        padding: 5px 20px;
+    }
+    .hero-txt>h1{
+        font-size: 25px;
+    }
+    .hero-txt>h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .hero-txt>p{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .hero-img{
+        margin: 0 auto;
+        height: 200px;
+        width: 150px;
+    }
+    .hero-btn{
+        background-color: red;
+        font-size: 12px ;
+        padding: 5px 15px !important;
+    }
 }

@@ -33,11 +33,11 @@ li{
 .col-sb{
     align-content: space-between;
 }
-.pad-10-rem{
-    padding: 0px 10vw;
+.pad-10-percent{
+    padding: 0px 10%;
 }
-.pad-20-rem{
-    padding: 1rem 20rem;
+.pad-20-percent{
+    padding: 0 20%;
 }
 .btn{
     background-color: #F4CE14;

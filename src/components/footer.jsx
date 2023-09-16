@@ -4,7 +4,7 @@ import logoImg from '../assets/logoImg1.png'
 function Footer() {
 
   return (
-    <footer className='footer-div row row-sb'>
+    <footer className='row row-sb pad-10-percent footer-div'>
       <img src={logoImg} alt="Footer-Image" />
       <div className="footer-div-1">
         <h2>Doormat Navigation</h2>

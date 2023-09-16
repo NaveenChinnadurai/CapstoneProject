@@ -6,7 +6,7 @@ function Highlights() {
     return(
       <div className="special-card" key={item.foodName}>
         <img src={item.img} alt="Imgage" className='card-img'/>
-        <div className="special-head row-sb">
+        <div className="row-sb special-head">
           <h4>{item.foodName}</h4>
           <span>${item.price}</span>
         </div>
@@ -17,11 +17,11 @@ function Highlights() {
   })
   return (
     <div className='highlights-div'>
-      <div className="higlight-head row row-sb pad-20-rem">
+      <div className="row row-sb pad-10-percent higlight-head">
         <h1>This Week Specials!</h1>
-        <button className='btn br-20'>Online Menu</button>
+        <button className='btn br-20 highlights-btn'>Online Menu</button>
       </div>
-      <div className="highlight-cards pad-20-rem row">{displaySpecials}</div>
+      <div className="pad-10-percent row highlight-cards">{displaySpecials}</div>
     </div>
   )
 }

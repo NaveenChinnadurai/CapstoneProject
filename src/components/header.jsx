@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <nav className='navbar pad-10-rem row row-sb'>
+    <nav className='pad-10-percent row row-sb navbar'>
         <Link to="/"><img src={LogoImg} alt="Little lemon icon" className='nav-icon'/></Link>
         <ul className="row row-se nav-links">
             <li><Link to="/" className='nav-book'>Home</Link></li>
