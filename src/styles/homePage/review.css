@@ -1,15 +1,16 @@
-.testimonial-div{
-    background-color: #3F5950;
-    padding: 3rem 0px;
-    text-align: center;
-}
 .review-card{
-    width: 18%;
+    width: 20%;
+    min-width: 280px;
     background-color: #D9D9D9;
-    margin-right: 2px;
-    padding: 5px 10px;
+    padding: 20px;
     margin: 0px 5px;
     border-radius: 5px;
+}
+.review-card>h3{
+    margin: 5px 0;
+}
+.ratings-star{
+    margin: 0 2px;
 }
 .review-card>p{
     margin: 5px 0px;
@@ -24,9 +25,6 @@
 }
 
 @media screen and (max-width:576px) {
-    .testimonial-div{
-        flex-direction: column;
-    }
     .review-card{
         width: 80%;
         margin: 10px 0;

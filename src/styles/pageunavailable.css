@@ -1,0 +1,33 @@
+.pageunavailable-div{
+    padding: 20px;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+.unavailable-img{
+    height:50px;
+    width: 50px;
+    margin: 0 5px ;
+}
+.pageunavailable-div>h2{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:576px) {
+    .pageunavailable-div>h1{
+        font-size: 28px;
+    }
+    .pageunavailable-div>h2{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .unavailable-img{
+        margin: 10px 0;
+    }
+}

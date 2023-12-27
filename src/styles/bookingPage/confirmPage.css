@@ -1,0 +1,27 @@
+.confirmPage-div{
+    height: 40vh;
+}
+.confirm-text>h1{
+    text-align: center;
+}
+.confirm-img{
+    height: 50px;
+    margin: 0 5px;
+}
+.btn-div{
+    margin: 20px 0;
+}
+.btn-div>.btn{
+    margin: 0 10px;
+}
+@media screen and (max-width:576px) {
+    .confirmPage-div{
+        height: 60vh;
+    }
+    .confirm-text{
+        flex-direction: column;
+    }
+    .confirmPage-img{
+        margin: 10px 0;
+    }
+}

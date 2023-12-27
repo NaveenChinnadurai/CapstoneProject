@@ -1,0 +1,38 @@
+
+.highlights-div{
+    padding: 20px 0;
+}
+.higlight-head{
+    width: 80%;
+    margin: 0 auto;
+}
+.highlight-cards{
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.testimonial-wrapper{
+    background-color: #3F5950;
+    padding: 30px;
+}
+.testimonial-div{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+    .testimonial-div{
+        flex-direction: column;
+    }
+    .highlight-cards{
+        flex-direction: column;
+        align-content: center;
+    }
+    .testimonial-wrapper{
+        padding: 10px 0;
+    }
+    .testimonial-div{
+        padding: 10px;
+    }
+}

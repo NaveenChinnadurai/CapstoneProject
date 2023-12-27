@@ -7,9 +7,7 @@
     font-size: 20px;
 }
 .book-form{
-    margin: 20px;
-    width: 100%;
-    flex-direction: column;
+    margin: 30px 0;
 }
 .booking-img{
     height: 350px;
@@ -29,6 +27,9 @@
         text-align: justify;
         font-size: 18px;
         padding: 20px;
+    }
+    .book-form{
+        flex-direction: column;
     }
     .booking-img{
         height: 200px;

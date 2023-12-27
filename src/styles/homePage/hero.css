@@ -1,9 +1,10 @@
 .hero-div{
     background-color: #3F5950;
-    padding: 20px 22%;
+    padding: 30px 20px ;
+    justify-content: space-around;
 }
 .hero-txt{
-    width: 50%;
+    width: 40%;
     align-items: flex-start !important;
 }
 .hero-txt>h1{
@@ -17,6 +18,8 @@
 }
 .hero-txt>p{
     width: 90%;
+    margin: 8px 0;
+    font-size: 20px;
 }
 .hero-btn-div{
     margin: 20px 0px;
@@ -36,31 +39,42 @@
         flex-direction: column-reverse;
         align-content: center;
         justify-content: center;
-        padding: 10px 0;
+        padding: 30px 0;
         height: fit-content;
     }
     .hero-txt{
-        width: fit-content;
-        padding: 5px 20px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px ;
     }
     .hero-txt>h1{
+        text-align: center;
         font-size: 25px;
+        width: 100%;
     }
     .hero-txt>h2{
+        width: 100%;
         font-size: 20px;
+        text-align: center;
         font-weight: 500;
     }
     .hero-txt>p{
-        width: 100%;
+        width: fit-content;
         font-size: 16px;
+        margin: 0 auto;
         font-weight: 500;
     }
     .hero-img{
         margin: 0 auto;
         width: 70%;
     }
+    .hero-btn-div{
+        width: 100%;
+        margin: 15px 0;
+    }
     .hero-btn{
-        font-size: 12px ;
+        font-size: 15px ;
         padding: 5px 15px !important;
     }
 }

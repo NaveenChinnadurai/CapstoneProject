@@ -2,9 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/homePage/hero.css'
 function Hero() {
-  
   return (
-    <div className='row-sb hero-div '>
+    <div className='row hero-div '>
       <div className="col hero-txt">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

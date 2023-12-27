@@ -10,6 +10,7 @@
 .about-txt>p{
     text-align: justify;
     margin: 10px 0px;
+    font-size: 18px;
 }
 .about-img{
     width: 200px;
@@ -46,7 +47,7 @@
         font-size: 20px;
     }
     .about-txt>p{
-        font-size: 14px;
+        font-size:17px;
     }
     .about-img{
         width: 150px;

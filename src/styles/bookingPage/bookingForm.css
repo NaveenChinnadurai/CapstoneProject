@@ -4,16 +4,17 @@ form{
     border-radius: 20px;
     width: 40% !important;
 }
+form>h1{
+    margin-bottom: 10px;
+}
 .user-info{
     width: 100%;
     flex-wrap: wrap;
     padding: 10px;
 }
-.book-details{
-}
 .book-sub{
     margin: 5px;
-    width: fit-content !important;
+    width: fit-content;
 }
 .guest-count{
     width: 40%;
@@ -22,21 +23,25 @@ input{
     padding: 5px;
     margin: 10px 5px;
     border: none;
+    background-color: white;
     color: black;
     font-weight: 600;
-    border-bottom: 2px solid black;
+    outline: none;
+    border-bottom: 1px solid rgb(87, 86, 86);
 }
 input::placeholder{
     color: black;
 }
+
 select{
     font-size: 13px;
     letter-spacing: 1px;
     margin: 0px 5px;
     border: none;
     color: black;
-    border-bottom: 2px solid black;
     padding: 5px;
+    border-bottom: 1px solid rgb(87, 86, 86);
+    background-color: white;
     font-weight: 600;
 }
 
