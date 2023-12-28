@@ -15,8 +15,17 @@
 .card-img{
     width: 100%;
 }
-
-
+.special-card>span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.btn-success,.btn-danger{
+    margin: 0 10px;
+    border-radius: 10px;
+}
 @media screen and (max-width:576px) {
     .special-card{
         width: 80%;

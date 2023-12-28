@@ -1,59 +1,104 @@
 import React, { useState } from 'react'
 import '../../styles/bookingPage/bookingForm.css'
-import {setBookings} from '../../scripts/reservation'
+import { setBookings } from '../../scripts/reservation'
 import { useNavigate } from 'react-router-dom'
-
+import Swal from 'sweetalert2'
 function Bookingform() {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     function submitForm() {
-        setBookings(localState)
-        console.log(localState)
-        navigate('/confirmPage')
+        if (localState.name === "" && localState.mobileNo === "" && localState.email === "" && localState.count === 0) {
+            Swal.fire({
+                title: "<strong>Invalid Input</strong>",
+                icon: "info",
+                html: `All fields are manitory`,
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText: `Ok`,
+                confirmButtonAriaLabel: "Thumbs up, great!",
+            });
+        } else {
+            setBookings(localState)
+            console.log(localState)
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                  confirmButton: "btn btn-success",
+                  cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+              });
+              swalWithBootstrapButtons.fire({
+                title: "Are you sure?",
+                text: "Confirm to book your table in little lemon restaurants",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, Book Now!",
+                cancelButtonText: "No, cancel!",
+                reverseButtons: true
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  swalWithBootstrapButtons.fire({
+                    title: "Booked!",
+                    text: "Your table is booked.",
+                    icon: "success"
+                  });
+                  navigate("/confirmPage")
+                } else if (
+                  result.dismiss === Swal.DismissReason.cancel
+                ) {
+                  swalWithBootstrapButtons.fire({
+                    title: "Cancelled",
+                    text: "Your booking is aborted :)",
+                    icon: "error"
+                  });
+                }
+              });
+        }
     }
     const localState = {
-        name:"",
-        mobileNo:"",
-        email:"",
-        count:0,
-        date:"",
-        time:"",
-        occasion:""
+        name: "",
+        mobileNo: "",
+        email: "",
+        count: 0,
+        date: "",
+        time: "",
+        occasion: ""
     }
 
-    const handleNameChange=(e)=>{
-        localState.name=e.target.value
+    const handleNameChange = (e) => {
+        localState.name = e.target.value
     }
-    const handleMobileChange=(e)=>{
-        localState.mobileNo=e.target.value
+    const handleMobileChange = (e) => {
+        localState.mobileNo = e.target.value
     }
-    const handleEmailChange=(e)=>{
-        localState.email=e.target.value
+    const handleEmailChange = (e) => {
+        localState.email = e.target.value
     }
-    const handleGuestChange=(e)=>{
-        localState.count=e.target.value
+    const handleGuestChange = (e) => {
+        localState.count = e.target.value
     }
-    const handleOccasionChange=(e)=>{
-        localState.occasion=e.target.value
+    const handleOccasionChange = (e) => {
+        localState.occasion = e.target.value
     }
-    const handleDateChange=(e)=>{
-        localState.date=Date(e.target.value)
+    const handleDateChange = (e) => {
+        localState.date = Date(e.target.value)
     }
-    const handleTimeChange=(e)=>{
-        localState.time=e.target.value
+    const handleTimeChange = (e) => {
+        localState.time = e.target.value
     }
     return (
         <form className='col wid-fit booking-div'>
             <h1 className='wid-fit'>Reserve Your Table Here</h1>
             <div className='row-se user-info'>
                 <input type="text" name='name' className="cus-name" placeholder='Enter your Name' onChange={handleNameChange} />
-                <input type="text" name='mobile' placeholder='Mobile No.' onChange={handleMobileChange}/>
-                <input type="email" name='email' placeholder='Email ID' onChange={handleEmailChange}/>
-                <input type="number" min={1} name='count' placeholder='No. of guest' onChange={handleGuestChange}/>
+                <input type="text" name='mobile' placeholder='Mobile No.' onChange={handleMobileChange} />
+                <input type="email" name='email' placeholder='Email ID' onChange={handleEmailChange} />
+                <input type="number" min={1} name='count' required placeholder='No. of guest' onChange={handleGuestChange} />
             </div>
             <div className='row book-details'>
                 <div className=" col wid-fit book-sub">
                     <label htmlFor='res-date'>Choose date </label>
-                    <input type="date" id='res-date' className='date-field' onChange={handleDateChange}/>
+                    <input type="date" id='res-date' className='date-field' onChange={handleDateChange} />
                 </div>
                 <div className="col wid-fit book-sub">
                     <label htmlFor="res-time">Choose time </label>

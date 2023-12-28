@@ -12,7 +12,7 @@ function Hero() {
           <Link role='button' to="/bookingpage" className='btn hero-btn br-20' >Reserve a Table</Link>
         </div>
       </div>
-      <div className="hero-img br-20"></div>
+      <div className="hero-img "></div>
     </div>
   )
 }
