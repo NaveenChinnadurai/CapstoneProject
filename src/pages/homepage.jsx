@@ -7,6 +7,7 @@ import Highlights from '../components/homePage/highlights'
 import Testimonials from '../components/homePage/testimonial'
 import About from '../components/homePage/about'
 function HomePage() {
+    window.scrollTo(0,0)
     return (
         <div className='Home-page-div'>
             <Hero />

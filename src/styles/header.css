@@ -6,7 +6,8 @@
     cursor: pointer;
 }
 .nav-links{
-    width:70%;
+    width:fit-content;
+    gap: 50px;
     height: fit-content;
 }.nav-links>li{
     font-weight:600;
@@ -44,16 +45,16 @@
         display: none !important;
     }
     .display-nav{
-        position: absolute;
-        top: 0;
-        height: fit-content;
+        position: absolute ;
+        top:0;
         width: 100%;
         display: flex !important;
         flex-direction: column;
+        gap: 10px;
         justify-content: center;
         align-items: center;
+        padding-top: 40px;
         background-color: #2e4d42;
-        padding-top: 30px;
     }
     .display-nav>li,.display-nav>li>.nav-book{
         width: fit-content;

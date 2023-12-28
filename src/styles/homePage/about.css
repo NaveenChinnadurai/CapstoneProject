@@ -1,8 +1,10 @@
 .about-div{
     padding: 20px 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 .about-txt{
-    width: 40%;
+    width: 50%;
 }
 .about-txt>h1{
     margin: 5px 0px;
@@ -11,6 +13,9 @@
     text-align: justify;
     margin: 10px 0px;
     font-size: 18px;
+}
+.about-img-div{
+    width: 50%;
 }
 .about-img{
     width: 200px;

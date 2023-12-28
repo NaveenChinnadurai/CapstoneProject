@@ -13,17 +13,21 @@
 
 .testimonial-wrapper{
     background-color: #3F5950;
-    padding: 30px;
+    padding: 30px 0;
 }
 .testimonial-div{
+    overflow: auto;
     width: 100%;
-    padding: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
 @media screen and (max-width:576px) {
     .testimonial-div{
         flex-direction: column;
+    }
+    .higlight-head{
+        width: 100%;
     }
     .highlight-cards{
         flex-direction: column;
@@ -33,6 +37,6 @@
         padding: 10px 0;
     }
     .testimonial-div{
-        padding: 10px;
+        padding: 20px 10px;
     }
 }

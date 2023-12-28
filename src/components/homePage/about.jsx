@@ -3,7 +3,7 @@ import '../../styles/homePage/about.css'
 
 function About() {
   return (
-    <div className='wid-70 row row-se about-div'>
+    <div className=' row row-se about-div'>
       <div className="about-txt">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

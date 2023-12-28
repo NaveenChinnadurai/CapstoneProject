@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Bookingform from '../components/bookingPage/bookingform'
 import '../styles/bookingPage/bookingPage.css'
 function BookingPage() {
-
+    window.scrollTo(0,0)
     return (
         <div className='col booking-page-div'>
             <p>Every reservation is an invitation to a masterpiece of flavor and ambiance. Reserve your table online at Little Lemon Restaurant and embark on a culinary journey where every dish is a work of art, and every moment is a masterpiece. Your culinary adventure begins with a click – book your table online now.</p>
