@@ -13,7 +13,7 @@ function Testimonials(props) {
         {
           ratings.map((i) => {
             return (
-              <span><Star /></span>
+              <span key={ratings.indexOf(i)}><Star /></span>
             )
           })
         }

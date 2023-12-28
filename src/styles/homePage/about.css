@@ -15,12 +15,13 @@
     font-size: 18px;
 }
 .about-img-div{
-    width: 50%;
+    width: fit-content;
 }
 .about-img{
     width: 200px;
     height: 300px;
     margin-bottom: 2px;
+    background-color: red;
 }
 .ab-1{
     margin-top: 80px;
@@ -54,9 +55,15 @@
     .about-txt>p{
         font-size:17px;
     }
+    .about-img-div{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 !important;
+    }
     .about-img{
-        width: 150px;
-        height: 200px;
-        margin-bottom: 2px;
+        width: 60%;
+    }
+    .ab-2{
+        z-index: -1;
     }
 }
